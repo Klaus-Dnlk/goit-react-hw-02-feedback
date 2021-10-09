@@ -5,6 +5,7 @@ import Section from './components/Section/Section'
 import FeedbackOptions from './components/FeedbackOptions/FeedbackOptions'
 import Statistics from './components/Statistics/Statistics'
 import Notification from './components/Notification/Notification'
+import s from './App.module.scss'
 
 
 
@@ -54,7 +55,7 @@ render() {
     const options = Object.keys(this.state)
     
     return (
-        <div>
+        <div className={s.section}>
            <Section title="Please leave feedback">
                 <FeedbackOptions
                     options={options}

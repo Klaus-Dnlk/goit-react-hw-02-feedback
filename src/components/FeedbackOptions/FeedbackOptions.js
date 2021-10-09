@@ -5,7 +5,7 @@ import s from './feedbackOptions.module.scss'
 
 function FeedbackOptions({options, onLeaveFeedback}) {
     return (
-        <div>
+        <div className={s.buttonsBox}>
             {options.map(option => (
                 <button type='button'className={s.button} name={option}onClick={onLeaveFeedback}>{option}</button>
             ))}
